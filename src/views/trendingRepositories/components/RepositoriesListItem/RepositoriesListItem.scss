@@ -1,0 +1,126 @@
+@import '../../../../styleconfig.scss';
+
+.repositories-list-item-wrap {
+  border-bottom: 1px solid $theme-border;
+  padding: 1rem;
+  color: $theme-text-alt;
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    .repo-details {
+      flex: 1;
+
+      .repo-name {
+        a {
+          color: $theme-highlight;
+          text-decoration: none;
+          font-size: 1.25rem;
+          font-weight: 400;
+
+          span {
+            font-weight: 600;
+          }
+
+          &:hover {
+            text-decoration: underline;            
+          }
+        }
+      }
+      
+      .repo-desc {
+        font-size: 0.875rem;
+        padding: 0.5rem 1rem 0.75rem 0;
+      }
+    }
+
+    .stars-action {
+      flex-shrink: 1;
+
+      button {
+        border: 1px solid $theme-border;
+        padding: 0.4rem 0.75rem;
+        background-color: #21262d;
+        color: $theme-text-default;
+        font-size: 12px;
+        font-weight: 600;
+        cursor: pointer;
+        position: relative;
+
+        &:hover {
+          border-color: #8b949e;
+          background-color: #30363d;
+          z-index: 1;
+        }
+
+        svg {
+          color: $theme-text-alt;
+        }
+        
+        &:first-child {
+          border-radius: 6px 0 0 6px;
+        }
+
+        &:last-child {
+          border-radius: 0 6px 6px 0;
+          padding: 0.4rem 0.5rem;
+          position: relative;
+          left: -1px;
+        }
+      }
+    }
+
+    .repo-meta {
+      display: flex;
+      font-size: 0.75rem;
+      flex-wrap: wrap;
+
+      .repo-language {
+        margin-right: 1rem;
+      }
+
+      .repo-total-stars {
+        margin-right: 1rem;
+        cursor: pointer;
+
+        &:hover {
+          color: $theme-highlight
+        }
+      }
+
+      .repo-forks {
+        margin-right: 1rem;
+        cursor: pointer;
+
+        &:hover {
+          color: $theme-highlight;
+        }
+      }
+
+      .repo-users {
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: -1px;
+
+        a {
+          font-size: 0;
+        }
+        
+        img {
+          margin-left: 4px;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .repo-stars {
+      font-size: 0.75rem;
+    }
+  }
+}

@@ -1,3 +1,16 @@
+# Running Instructions
+
+The APIs are accessible behind a local proxy to overcome CORS issue. To run the project on local
+
+1. Run `yarn proxy` in a terminal window and keep it open.
+2. Run `yarn start` in a separate terminal window to start the application in dev mode. 
+
+While the proxy server is running, the API calls should go through.
+
+
+-----------
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

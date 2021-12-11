@@ -1,0 +1,122 @@
+@import '../../../../styleconfig.scss';
+
+.developers-list-item-wrap {
+  border-bottom: 1px solid $theme-border;
+  padding: 1rem;
+  color: $theme-text-alt;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  .col {
+    flex: 3;
+
+    &.flex {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &.actions {
+      flex: 2;
+      justify-content: flex-end;
+    }
+
+    .rank {
+      font-size: 0.75rem; 
+      padding-right: .5rem;
+    }
+
+    .avatar {
+      margin: 0 1rem;
+
+      img {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+      }
+    }
+
+    .user-info {
+
+      .user-name {
+        a {
+          font-size: 1rem;
+          color: $theme-text-alt;
+          text-decoration: none;
+
+          &:hover {
+            color: $theme-highlight;
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .full-name {
+        a {
+          color: $theme-highlight;
+          font-size: 1.25rem;
+          text-decoration: none;
+          font-weight: 600;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .popular-label {
+      font-size: 0.75rem; 
+      font-weight: 600;
+      padding-bottom: 0.5rem;
+
+      svg {
+        color: #db6d28;
+      }
+    }
+
+    .popular-repo {
+      padding-bottom: 0.5rem;
+      
+      a {
+        font-size: 1rem; 
+        color: $theme-highlight;
+        text-decoration: none;
+        font-weight: 600;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }      
+    }
+
+    .repo-desc {
+      font-size: 0.75rem; 
+    }
+
+    button {
+      border: 1px solid $theme-border;
+      padding: 0.4rem 0.75rem;
+      background-color: #21262d;
+      color: $theme-text-default;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 6px;
+      margin-left: 0.5rem;
+
+      &:hover {
+        border-color: #8b949e;
+        background-color: #30363d;
+      }
+
+      svg {
+        color: #db61a2;
+        padding-right: 0.25rem;
+        position: relative;
+        top: 1px;
+      }          
+    }
+  }
+}
